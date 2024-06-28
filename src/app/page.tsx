@@ -11,14 +11,20 @@ function NavButton({ link, label }: { link: string; label: string }) {
 
 function Nav() {
   return (
-    <div className="hidden md:flex gap-4 justify-evenly items-center font-light tracking-wide">
+    <div className="flex gap-4 justify-evenly items-center font-light tracking-wide">
       <Link
         href="#home"
-        className="text-xl tracking-widest font-light transition-all cursor-pointer px-4 py-3 hover:bg-slate-500 hover:bg-opacity-15 hover:text-sky-400"
+        className="text-xl tracking-widest font-light transition-all cursor-pointer px-4 py-3 hover:bg-slate-500 hover:bg-opacity-15 hover:text-sky-400 hidden md:flex"
       >
         Tyler Davies
       </Link>
-      <div /><div />
+      <Link
+        href="#home"
+        className="text-xl tracking-widest font-light transition-all cursor-pointer px-4 py-3 hover:bg-slate-500 hover:bg-opacity-15 hover:text-sky-400 flex md:hidden"
+      >
+        Home
+      </Link>
+      <div className="hidden md:flex" /><div className="hidden md:flex" />
       <NavButton label="About" link="/#about" />
       <NavButton label="Skills" link="/#skills" />
       <NavButton label="Projects" link="/#projects" />
@@ -30,17 +36,20 @@ function Nav() {
 
 function Header() {
   return (
-    <div className="flex flex-row-reverse justify-evenly items-center h-full flex-wrap overflow-y-auto" id="home">
+    <div className="flex flex-row-reverse justify-center md:justify-evenly items-center h-full flex-wrap overflow-y-auto" id="home">
       <Image
         src=""
-        height={200}
-        width={200}
+        height={300}
+        width={300}
         alt="header image"
-        className="profile-image static bg-sky-400"
+        className="profile-image static bg-sky-400 m-10"
       />
-      <div className="max-w-3xl px-4">
+      <div className="max-w-xl px-4">
         <p className="text-2xl tracking-wider my-4 font-extralight">Tyler Davies</p>
         <p className="text-2xl tracking-wider my-4 font-extralight text-sky-400">Front End Developer</p>
+        <p className="text-xl font-light">I'm a junior web developer with a focus on the front end with UI and UX. I graduated with a Bachelor's in Information Technology and a certificate in Programming in 2023.</p>
+        <p className="text-xl font-light">I'm a junior web developer with a focus on the front end with UI and UX. I graduated with a Bachelor's in Information Technology and a certificate in Programming in 2023.</p>
+        <p className="text-xl font-light">I'm a junior web developer with a focus on the front end with UI and UX. I graduated with a Bachelor's in Information Technology and a certificate in Programming in 2023.</p>
         <p className="text-xl font-light">I'm a junior web developer with a focus on the front end with UI and UX. I graduated with a Bachelor's in Information Technology and a certificate in Programming in 2023.</p>
       </div>
     </div>
