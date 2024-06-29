@@ -43,3 +43,8 @@ body {
   margin: 0;
   min-height: 100vh
 };
+
+.profile-image {
+  border: 2px solid #0ea5e9;
+  box-shadow: 10px 15px 0 0 #0ea5e9;
+}
