@@ -5,6 +5,8 @@
 html {
   scroll-behavior: smooth;
   user-select: none;
+  font-size: large;
+  scroll-snap-type: mandatory;
 }
 
 :root {
@@ -16,8 +18,8 @@ html {
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 20, 20, 20;
-    --background-end-rgb: 20, 25, 40;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 22, 26, 40;
   }
 }
 
