@@ -34,7 +34,7 @@ function Header() {
       <div className="max-w-2xl px-4">
         <p className="text-3xl tracking-wider my-4 font-extralight">Tyler Davies</p>
         <p className="text-2xl tracking-wider my-4 font-extralight text-sky-500">Front End Developer</p>
-        <p className="text-xl font-light">I'm a junior web developer with a focus on the front end with UI and UX. I graduated with a Bachelor's in Information Technology and a certificate in Programming in 2023.</p>
+        <p className="text-xl font-light">I\'m a junior web developer with a focus on the front end with UI and UX. I graduated with a Bachelor\'s in Information Technology and a certificate in Programming in 2023.</p>
       </div>
       <Image
         src="/images/profile-image.jpg"
@@ -55,7 +55,7 @@ function About() {
           <h2 className="text-2xl text-sky-500">Education</h2>
           <hr className="mt-2 mb-6"/>
           
-          <h3 className="text-xl inline mr-2 text-center">Bachelor's of Science in Information Technology</h3>
+          <h3 className="text-xl inline mr-2 text-center">Bachelor\'s of Science in Information Technology</h3>
           <h3 className="text-lg text-center text-gray-500 mb-2">University of Phoenix | 2023</h3>
           <ul className="list-disc pl-5">
             <li>Open Systems Interconnection (OSI) Model</li>
@@ -87,7 +87,7 @@ function About() {
           <ul className="list-disc pl-5">
             <li>Configuration and QA of routers, switches, printers, scanners, desktop computers, laptops, and more</li>
             <li>Developing internal software to automate configuration tasks, improving efficiency and consistency</li>
-            <li>Writing documentation on how to perform job duties as well as how to use software I've developed or helped to develop</li>
+            <li>Writing documentation on how to perform job duties as well as how to use software I\'ve developed or helped to develop</li>
           </ul>
 
           <hr className="my-6"/>
