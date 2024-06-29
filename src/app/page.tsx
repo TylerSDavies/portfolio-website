@@ -121,7 +121,7 @@ function About() {
 
 function Skills() {
   function SkillBubble({ text }: {text: string}) {
-    return <div className="bg-fuchsia-400 text-slate-900 dark:text-white dark:bg-slate-800 lg:dark:text-fuchsia-500 px-4 py-2 text-md lg:text-2xl">{text}</div>
+    return <div className="bg-slate-600 text-white dark:bg-slate-800 lg:dark:text-fuchsia-500 px-4 py-2 text-md lg:text-2xl">{text}</div>
   }
   return(
     <div className="flex flex-col h-full overflow-y-auto items-center justify-center lg:mx-10" id="skills">
