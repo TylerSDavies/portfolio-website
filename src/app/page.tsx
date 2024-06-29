@@ -39,7 +39,7 @@ function Nav() {
 
 function Header() {
   return (
-    <div className="flex flex-col-reverse 2xl:flex-row justify-end lg:justify-center gap-10 lg:gap-20 items-center h-full overflow-y-auto" id="home">
+    <div className="flex flex-col 2xl:flex-row justify-start lg:justify-center gap-10 lg:gap-20 items-center h-full overflow-y-auto" id="home">
       <div className="max-w-2xl p-4">
         <p className="text-4xl lg:text-2xl tracking-wider my-4 font-extralight text-center lg:text-left">Tyler Davies</p>
         <p className="text-2xl tracking-wider my-4 font-light text-center lg:text-left text-sky-500">Front End Developer</p>
@@ -50,7 +50,7 @@ function Header() {
         height={300}
         width={300}
         alt="header image"
-        className="profile-image mt-5 lg:mt-0"
+        className="profile-image mb-10 lg:mb-0"
       />
     </div>
   );
@@ -85,7 +85,7 @@ function About() {
             <li>Objects and Inheritance</li>
           </ul>
 
-          <hr className="my-6"/>
+          <hr className="hidden lg:block my-6"/>
         </div>
 
         <div className="flex flex-col flex-1">
@@ -111,7 +111,7 @@ function About() {
             <li>Printer, scanner, and network device QA and repair</li>
           </ul>
 
-          <hr className="my-6"/>
+          <hr className="hidden lg:block my-6"/>
         </div>
 
       </div>
@@ -124,7 +124,7 @@ function Skills() {
     return <div className="bg-slate-600 text-white dark:bg-slate-800 lg:dark:text-fuchsia-500 px-4 py-2 text-md lg:text-2xl">{text}</div>
   }
   return(
-    <div className="flex flex-col h-full overflow-y-auto items-center justify-center lg:mx-10" id="skills">
+    <div className="flex flex-col h-full overflow-y-auto items-center justify-start lg:mx-10" id="skills">
 
       <div className="flex flex-col mx-5 xs:mx-10 sm:mx-20 md:mx-40 2xl:mx-0 my-10 lg:w-full max-w-screen-xl">
         <h3 className="text-2xl text-sky-500 text-center lg:text-left">Front End</h3>
