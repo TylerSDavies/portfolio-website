@@ -124,7 +124,7 @@ function Skills() {
     return <div className="bg-slate-600 text-white dark:bg-slate-800 lg:dark:text-fuchsia-500 px-4 py-2 text-md lg:text-2xl">{text}</div>
   }
   return(
-    <div className="flex flex-col h-full overflow-y-auto items-center justify-start lg:mx-10" id="skills">
+    <div className="flex flex-col h-full overflow-y-auto items-center justify-start lg:mx-10 lg:justify-center" id="skills">
 
       <div className="flex flex-col mx-5 xs:mx-10 sm:mx-20 md:mx-40 2xl:mx-0 my-10 lg:w-full max-w-screen-xl">
         <h3 className="text-2xl text-sky-500 text-center lg:text-left">Front End</h3>
