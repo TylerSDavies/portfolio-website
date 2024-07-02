@@ -28,7 +28,7 @@ function Nav() {
         <div className="flex flex-row gap-4 w-full justify-evenly lg:max-w-fit">
           <NavButton label="Projects" link="/#projects" />
           <NavButton label="Contact" link="/#contact" />
-          <NavButton label="Resume" link="/" />
+          <NavButton label="Résumé" link="/Résumé.pdf" />
         </div>
         <div className="hidden xl:flex" />
       </div>
@@ -124,7 +124,7 @@ function Skills() {
     return <div className="bg-slate-600 text-white dark:bg-slate-800 lg:dark:text-fuchsia-500 px-4 py-2 text-md lg:text-2xl">{text}</div>
   }
   return(
-    <div className="flex flex-col h-full overflow-y-auto items-center justify-start lg:mx-10 lg:justify-center" id="skills">
+    <div className="flex flex-col h-full overflow-y-auto items-center justify-start lg:mx-10" id="skills">
 
       <div className="flex flex-col mx-5 xs:mx-10 sm:mx-20 md:mx-40 2xl:mx-0 my-10 lg:w-full max-w-screen-xl">
         <h3 className="text-2xl text-sky-500 text-center lg:text-left">Front End</h3>
@@ -175,9 +175,27 @@ function Skills() {
 
 function Projects() {
   return(
-    <div className="h-full overflow-y-auto" id="projects">
-      <h1>Projects</h1>
-      <p>text</p>
+    <div className="flex flex-col lg:flex-row h-full overflow-y-auto mx-5 sm:mx-20 gap-12 lg:gap-20 transition-all items-center" id="projects">
+
+      <div className="flex flex-col lg:flex-1 mt-20 lg:mt-10 items-center transition-all md:max-w-screen-sm">
+        <h3 className="text-2xl text-sky-500 text-center">Portfolio Website</h3>
+        <p className="text-gray-500 text-center font-light text-sm">NextJS-Based Web Application</p>
+        <hr className="my-2 w-full"/>
+        <a className="underline text-sky-500 hover:text-sky-700" href="https://github.com/TylerSDavies/fuX">GitHub</a>
+        <p>This is the GitHub repository for the website you see here. It's made using the NextJS Framework which includes and utilizes ReactJS and TailwindCSS extensively. Furthermore, the site is hosted on AWS Amplify.</p>
+      </div>
+
+      <div className="flex flex-col lg:flex-1 mb-10 lg:mt-10 items-center transition-all md:max-w-screen-sm">
+        <h3 className="text-2xl text-sky-500 text-center">fuX</h3>
+        <p className="text-gray-500 text-center font-light text-sm">Chrome Extension</p>
+        <hr className="my-2 w-full"/>
+        <div className="flex flex-row gap-5">
+          <a className="underline text-sky-500 hover:text-sky-700" href="https://github.com/TylerSDavies/portfolio-website">GitHub</a> |
+          <a className="underline text-sky-500 hover:text-sky-700" href="https://github.com/TylerSDavies/portfolio-website">Chrome Web Store</a>
+        </div>
+        <p>fuX is a Chrome extension I made to improve sharing posts from Twitter/X. It utilizes another service called FixUpX, a service that makes Twitter/X posts embed properly in chat services such as Telegram, Discord, Slack, and more.</p>
+      </div>
+
     </div>
   );
 }
@@ -185,8 +203,8 @@ function Projects() {
 function Contact() {
   return(
     <div className="h-full overflow-y-auto" id="contact">
-      <h1>Contact</h1>
-      <p>text</p>
+      <p>contact@tylerdavies.org</p>
+      <p>+1 (602) 314-1661</p>
     </div>
   );
 }
