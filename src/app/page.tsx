@@ -28,7 +28,7 @@ function Nav() {
         <div className="flex flex-row gap-4 w-full justify-evenly lg:max-w-fit">
           <NavButton label="Projects" link="/#projects" />
           <NavButton label="Contact" link="/#contact" />
-          <NavButton label="Résumé" link="/Résumé.pdf" />
+          <NavButton label="Résumé" link="https://docs.google.com/document/d/13Ayu69fDyyETsqP96GCRmiYhj0867IvIvb9s7X7MJOU/edit?usp=sharing" />
         </div>
         <div className="hidden xl:flex" />
       </div>
