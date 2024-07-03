@@ -58,8 +58,8 @@ function Header() {
 
 function About() {
   return(
-    <div className="flex justify-evenly items-center h-full overflow-y-auto flex-wrap gap-10" id="about">
-      <div className="flex flex-col lg:flex-row gap-20 mx-5 xs:mx-10 sm:mx-20 md:mx-40 lg:mx-10 xl:mx-20 transition-all">
+    <div className="flex justify-evenly h-full overflow-y-auto flex-wrap gap-10" id="about">
+      <div className="flex flex-col lg:flex-row gap-20 mx-5 xs:mx-10 sm:mx-20 md:mx-40 lg:mx-10 xl:mx-20 lg:mt-20 2xl:mt-32 transition-all">
 
         <div className="flex flex-col flex-1">
           <h2 className="text-center lg:text-left text-2xl text-sky-500 mt-10 lg:mt-0">Education</h2>
@@ -124,11 +124,11 @@ function Skills() {
     return <div className="bg-slate-600 text-white dark:bg-slate-800 lg:dark:text-fuchsia-500 px-4 py-2 text-md lg:text-2xl">{text}</div>
   }
   return(
-    <div className="flex flex-col h-full overflow-y-auto items-center justify-start lg:mx-10" id="skills">
+    <div className="flex flex-col h-full overflow-y-auto items-center justify-start w-full" id="skills">
 
-      <div className="flex flex-col mx-5 xs:mx-10 sm:mx-20 md:mx-40 2xl:mx-0 my-10 lg:w-full max-w-screen-xl">
+      <div className="flex flex-col my-10 w-full px-5 sm:px-10 md:px-20 lg:px-40">
         <h3 className="text-2xl text-sky-500 text-center lg:text-left">Front End</h3>
-        <hr className="my-4" />
+        <hr className="my-4 w-full" />
         <div className="flex flex-row flex-wrap gap-2 justify-start lg:justify-start">
           <SkillBubble text="HTML" />
           <SkillBubble text="JavaScript" />
@@ -144,9 +144,9 @@ function Skills() {
         </div>
       </div>
 
-      <div className="flex flex-col mx-5 xs:mx-10 sm:mx-20 md:mx-40 2xl:mx-0 my-10 lg:w-full max-w-screen-xl">
+      <div className="flex flex-col my-10 w-full px-5 sm:px-10 md:px-20 lg:px-40">
         <h3 className="text-2xl text-sky-500 text-center lg:text-left">Back End</h3>
-        <hr className="my-4" />
+        <hr className="my-4 w-full" />
         <div className="flex flex-row flex-wrap gap-2 justify-start lg:justify-start">
           <SkillBubble text="NodeJS" />
           <SkillBubble text="Java" />
@@ -157,9 +157,9 @@ function Skills() {
         </div>
       </div>
 
-      <div className="flex flex-col mx-5 xs:mx-10 sm:mx-20 md:mx-40 2xl:mx-0 my-10 lg:w-full max-w-screen-xl">
+      <div className="flex flex-col my-10 w-full px-5 sm:px-10 md:px-20 lg:px-40">
         <h3 className="text-2xl text-sky-500 text-center lg:text-left">Miscellaneous</h3>
-        <hr className="my-4" />
+        <hr className="my-4 w-full" />
         <div className="flex flex-row flex-wrap gap-2 justify-start lg:justify-start">
           <SkillBubble text="GitHub" />
           <SkillBubble text="OSI Model" />
@@ -175,55 +175,57 @@ function Skills() {
 
 function Projects() {
   return(
-    <div className="flex flex-col lg:flex-row h-full overflow-y-auto gap-12 lg:gap-24 transition-all" id="projects">
+    <div className="flex flex-col h-full items-center overflow-y-auto" id="projects">
+      <div className="flex flex-col lg:flex-row px-5 sm:p-10 md:p-20 transition-all w-full gap-20 items-center lg:items-start">
 
-      <div className="flex flex-col lg:flex-1 mt-20 lg:mt-10 items-center transition-all md:max-w-screen-sm mx-5 sm:mx-20">
-        <h3 className="text-2xl text-sky-500 text-center">Portfolio Website</h3>
-        <p className="text-gray-500 text-center font-light text-sm">NextJS-Based Web Application</p>
-        <hr className="my-2 w-full"/>
-        <a className="underline text-sky-500 hover:text-sky-700" href="https://github.com/TylerSDavies/fuX">GitHub</a>
-        <p>This website was made using the NextJS framework and utilizes a number of tools such as React and Tailwind.</p>
-        <img 
-          src={"/images/portfolio-01.jpg"}  
-          alt="portfolio-01"
-          className="my-4 border-sky-400 border-solid border-2"
-        />
-        <p>Many elements on the page are React components, such as the navigation bar, the navigation buttons themselves, labels in the skills section, and more.</p>
-        <br />
-        <p>GitHub is my go-to repository host. I've worked across numberous different devices while building this site. Furthermore, the page you're currently viewing is hosted on AWS. Every time a change is pushed to the "main" repository, the live site updates seamlessly on AWS.</p>
-        <br />
-        <p>Lastly, the site was built with mobile-first methodology and is fully responsive to essentially all sizes and orientations of device screens.</p>
-      </div>
-
-      <div className="flex flex-col lg:flex-1 mb-10 lg:mt-10 items-center transition-all md:max-w-screen-sm mx-5 sm:mx-20">
-        <h3 className="text-2xl text-sky-500 text-center">fuX</h3>
-        <p className="text-gray-500 text-center font-light text-sm">Chrome Extension</p>
-        <hr className="my-2 w-full"/>
-        <div className="flex flex-row gap-5">
-          <a className="underline text-sky-500 hover:text-sky-700" href="https://github.com/TylerSDavies/fuX">GitHub</a> |
-          <a className="underline text-sky-500 hover:text-sky-700" href="https://chromewebstore.google.com/detail/fux/ecjlgnjlkgndgajdijfjlmakeclfnoii">Chrome Web Store</a>
+        <div className="flex flex-col flex-1 items-center transition-all md:max-w-screen-sm">
+          <h3 className="text-2xl text-sky-500 text-center">Portfolio Website</h3>
+          <p className="text-gray-500 text-center font-light text-sm">NextJS-Based Web Application</p>
+          <hr className="my-2 w-full"/>
+          <a className="underline text-sky-500 hover:text-sky-700" href="https://github.com/TylerSDavies/fuX">GitHub</a>
+          <p>This website was made using the NextJS framework and utilizes a number of tools such as React and Tailwind.</p>
+          <img 
+            src={"/images/portfolio-01.jpg"}  
+            alt="portfolio-01"
+            className="my-4 border-sky-400 border-solid border-2"
+          />
+          <p>Many elements on the page are React components, such as the navigation bar, the navigation buttons themselves, labels in the skills section, and more.</p>
+          <br />
+          <p>GitHub is my go-to repository host. I've worked across numberous different devices while building this site. Furthermore, the page you're currently viewing is hosted on AWS. Every time a change is pushed to the "main" repository, the live site updates seamlessly on AWS.</p>
+          <br />
+          <p>Lastly, the site was built with mobile-first methodology and is fully responsive to essentially all sizes and orientations of device screens.</p>
         </div>
-        <p>fuX is a Chrome extension I made to improve sharing posts from Twitter/X. It utilizes another service called FixUpX, a service that makes Twitter/X posts embed properly in chat services such as Telegram, Discord, Slack, and more.</p>
-        <img 
-          src={"/images/fuX-01.jpg"}  
-          alt="fuX-01"
-          className="my-4 border-sky-400 border-solid border-2"
-        />
-        <p>The FixUpX button rests beneath every individual post. Clicking it copies the formatted link to your clipboard to make posting elsewhere fast and easy.</p>
-        <img 
-          src={"/images/fuX-02.jpg"}  
-          alt="fuX-02"
-          className="my-4 border-sky-400 border-solid border-2"
-        />
-      </div>
 
+        <div className="flex flex-col flex-1 items-center transition-all md:max-w-screen-sm">
+          <h3 className="text-2xl text-sky-500 text-center">fuX</h3>
+          <p className="text-gray-500 text-center font-light text-sm">Chrome Extension</p>
+          <hr className="my-2 w-full"/>
+          <div className="flex flex-row gap-5">
+            <a className="underline text-sky-500 hover:text-sky-700" href="https://github.com/TylerSDavies/fuX">GitHub</a> |
+            <a className="underline text-sky-500 hover:text-sky-700" href="https://chromewebstore.google.com/detail/fux/ecjlgnjlkgndgajdijfjlmakeclfnoii">Chrome Web Store</a>
+          </div>
+          <p>fuX is a Chrome extension I made to improve sharing posts from Twitter/X. It utilizes another service called FixUpX, a service that makes Twitter/X posts embed properly in chat services such as Telegram, Discord, Slack, and more.</p>
+          <img 
+            src={"/images/fuX-01.jpg"}  
+            alt="fuX-01"
+            className="my-4 border-sky-400 border-solid border-2"
+          />
+          <p>The FixUpX button rests beneath every individual post. Clicking it copies the formatted link to your clipboard to make posting elsewhere fast and easy.</p>
+          <img 
+            src={"/images/fuX-02.jpg"}  
+            alt="fuX-02"
+            className="my-4 border-sky-400 border-solid border-2"
+          />
+        </div>
+
+      </div>
     </div>
   );
 }
 
 function Contact() {
   return(
-    <div className="h-full overflow-y-auto" id="contact">
+    <div className="flex flex-col items-center justify-center h-full overflow-y-auto" id="contact">
       <p>contact@tylerdavies.org</p>
       <p>+1 (602) 314-1661</p>
     </div>
