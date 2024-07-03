@@ -175,25 +175,46 @@ function Skills() {
 
 function Projects() {
   return(
-    <div className="flex flex-col lg:flex-row h-full overflow-y-auto mx-5 sm:mx-20 gap-12 lg:gap-20 transition-all items-center" id="projects">
+    <div className="flex flex-col lg:flex-row h-full overflow-y-auto gap-12 lg:gap-24 transition-all" id="projects">
 
-      <div className="flex flex-col lg:flex-1 mt-20 lg:mt-10 items-center transition-all md:max-w-screen-sm">
+      <div className="flex flex-col lg:flex-1 mt-20 lg:mt-10 items-center transition-all md:max-w-screen-sm mx-5 sm:mx-20">
         <h3 className="text-2xl text-sky-500 text-center">Portfolio Website</h3>
         <p className="text-gray-500 text-center font-light text-sm">NextJS-Based Web Application</p>
         <hr className="my-2 w-full"/>
         <a className="underline text-sky-500 hover:text-sky-700" href="https://github.com/TylerSDavies/fuX">GitHub</a>
-        <p>This is the GitHub repository for the website you see here. It's made using the NextJS Framework which includes and utilizes ReactJS and TailwindCSS extensively. Furthermore, the site is hosted on AWS Amplify.</p>
+        <p>This website was made using the NextJS framework and utilizes a number of tools such as React and Tailwind.</p>
+        <img 
+          src={"/images/portfolio-01.jpg"}  
+          alt="portfolio-01"
+          className="my-4 border-sky-400 border-solid border-2"
+        />
+        <p>Many elements on the page are React components, such as the navigation bar, the navigation buttons themselves, labels in the skills section, and more.</p>
+        <br />
+        <p>GitHub is my go-to repository host. I've worked across numberous different devices while building this site. Furthermore, the page you're currently viewing is hosted on AWS. Every time a change is pushed to the "main" repository, the live site updates seamlessly on AWS.</p>
+        <br />
+        <p>Lastly, the site was built with mobile-first methodology and is fully responsive to essentially all sizes and orientations of device screens.</p>
       </div>
 
-      <div className="flex flex-col lg:flex-1 mb-10 lg:mt-10 items-center transition-all md:max-w-screen-sm">
+      <div className="flex flex-col lg:flex-1 mb-10 lg:mt-10 items-center transition-all md:max-w-screen-sm mx-5 sm:mx-20">
         <h3 className="text-2xl text-sky-500 text-center">fuX</h3>
         <p className="text-gray-500 text-center font-light text-sm">Chrome Extension</p>
         <hr className="my-2 w-full"/>
         <div className="flex flex-row gap-5">
-          <a className="underline text-sky-500 hover:text-sky-700" href="https://github.com/TylerSDavies/portfolio-website">GitHub</a> |
-          <a className="underline text-sky-500 hover:text-sky-700" href="https://github.com/TylerSDavies/portfolio-website">Chrome Web Store</a>
+          <a className="underline text-sky-500 hover:text-sky-700" href="https://github.com/TylerSDavies/fuX">GitHub</a> |
+          <a className="underline text-sky-500 hover:text-sky-700" href="https://chromewebstore.google.com/detail/fux/ecjlgnjlkgndgajdijfjlmakeclfnoii">Chrome Web Store</a>
         </div>
         <p>fuX is a Chrome extension I made to improve sharing posts from Twitter/X. It utilizes another service called FixUpX, a service that makes Twitter/X posts embed properly in chat services such as Telegram, Discord, Slack, and more.</p>
+        <img 
+          src={"/images/fuX-01.jpg"}  
+          alt="fuX-01"
+          className="my-4 border-sky-400 border-solid border-2"
+        />
+        <p>The FixUpX button rests beneath every individual post. Clicking it copies the formatted link to your clipboard to make posting elsewhere fast and easy.</p>
+        <img 
+          src={"/images/fuX-02.jpg"}  
+          alt="fuX-02"
+          className="my-4 border-sky-400 border-solid border-2"
+        />
       </div>
 
     </div>
