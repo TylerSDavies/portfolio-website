@@ -1,0 +1,90 @@
+#container {
+    height: 4rem;
+    position: relative;
+    background-color: #222;
+    z-index: 50;
+    width: 100%;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 60vw;
+    min-width: fit-content;
+    background-color: #111;
+    top: 4rem;
+    right: 101vw;
+    transition: right 0.5s;
+    z-index: 70;
+}
+
+#menu-button {
+    height: 4rem;
+    width: 4rem;
+    background-color: #444;
+    z-index: 80;
+}
+
+.nav-button {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    z-index: 80;
+}
+
+#name-container {
+    display: none;
+}
+
+#backdrop {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 4rem;
+    background-color: #000a;
+    backdrop-filter: blur(0px);
+    z-index: 60;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+@media screen and (min-width: 800px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: initial;
+        max-width: 250px;
+        height: fit-content;
+        background-color: #0002;
+        backdrop-filter: blur(0.5rem);
+        border-radius: 1rem;
+        padding: 2rem;
+    }
+
+    #name-container {
+        display: flex;
+        margin: 0 0 1.5rem 0;
+    }
+
+    #button-container {
+        display: flex;
+        position: initial;
+        background-color: #0000;
+        width: 100%;
+        height: fit-content;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    #backdrop {
+        display: none;
+    }
+}

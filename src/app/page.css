@@ -1,0 +1,39 @@
+#page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    max-height: 100vh;
+}
+
+#pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+    #page-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #nav {
+        flex: 1;
+    }
+
+    #pages {
+        flex: 2;
+        height: 100vh;
+        margin: 0 5% 0 0;
+        background-color: #111;
+        box-shadow: 0 0 2rem 0 #000a;
+    }
+}
