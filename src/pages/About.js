@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import PageContainer from "@/components/PageContainer";
 
 export default function About() {
