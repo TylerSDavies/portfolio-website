@@ -1,6 +1,5 @@
 'use client'
 
-import './page.css';
 import { createContext, useState } from 'react';
 import Nav from '@/components/Nav';
 import Pages from '@/pages/Pages'
@@ -10,20 +9,19 @@ export default function App() {
 
   const changePage = (newPage) => {
     setPageName(newPage);
-    console.log('New Page:', newPage);
   }
 
   return (
-    <div id='page-container'>
-      <div id='nav'>
+    <div className='flex flex-col md:flex-row md:justify-center md:items-center w-screen h-screen'>
+      <div id='nav' className='flex md:min-w-72 lg:min-w-96 md:justify-center transition-all'>
         <Nav
           style={{backgroundColor: '#8885'}}
           pageName={pageName}
           changePage={changePage}
         />
       </div>
-      <div id='pages'>
-        <Pages pageName={pageName} />
+        <div className='flex overflow-auto md:max-w-screen-md lg:mx-w-screen-md xl:max-w-screen-lg max-h-full justify-center w-full'>
+          <Pages pageName={pageName} />
       </div>
     </div>
   );

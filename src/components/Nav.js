@@ -1,5 +1,4 @@
 import { useState } from "react";
-import './Nav.css'
 
 function NavButton(props) {
     const [mouseHover, setMouseHover] = useState(false);
@@ -12,7 +11,7 @@ function NavButton(props) {
             disabled={props.pageName === props.currentPage}
             onMouseEnter={() => setMouseHover(true)}
             onMouseLeave={() => setMouseHover(false)}
-            className="nav-button"
+            className="h-16 md:h-12"
             style={{
                 backgroundColor: props.pageName === props.currentPage ? '#08ff' : mouseHover ? '#08f4' : '#0000',
                 cursor: props.pageName === props.currentPage ? 'default' : 'pointer',
@@ -33,13 +32,17 @@ export default function Nav(props) {
     }
 
     return (
-        <div id="container">
-            <button id="menu-button" onClick={menuButtonClick}></button>
-            <div id="name-container">
+        <div className="flex flex-col top-0 left-0 md:items-center w-screen bg-slate-800 md:bg-slate-200 md:bg-opacity-10 md:backdrop-blur-md md:max-w-64 md:rounded-2xl">
+            <button
+                className="w-16 h-16 md:hidden bg-slate-400 z-50"
+                onClick={menuButtonClick}
+            />
+            <div className="hidden md:flex my-10">
                 <h3>Tyler Davies</h3>
             </div>
             <div
                 id="button-container"
+                className="flex flex-col bg-slate-800 md:bg-transparent top-0 fixed h-full transition-all w-3/5 md:w-32 z-50 md:static md:mb-10"
                 style={{right: menuToggle ? '40vw' : '101vw'}}
             >
                 <NavButton
@@ -88,8 +91,8 @@ export default function Nav(props) {
                 </NavButton>
             </div>
             <div
-                id="backdrop"
                 onClick={() => setMenuToggle(false)}
+                className="w-screen h-screen transition-all z-40 top-0 fixed"
                 style={{
                     pointerEvents: menuToggle ? 'auto' : 'none',
                     opacity: menuToggle ? 1 : 0,
