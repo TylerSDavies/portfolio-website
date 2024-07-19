@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Home from '@/pages/Home';
 import About from '@/pages/About';
@@ -8,10 +8,12 @@ import Projects from '@/pages/Projects';
 import Contact from '@/pages/Contact';
 
 export default function Pages(props) {
+    const [currentPage, setCurrentPage] = useState('home');
+    const [previousPage, setPreviousPage] = useState('');
+
     useEffect(() => {
-            console.log('page changed')
-        }
-    ,[props.pageName]);
+        setCurrentPage(props.pageName);
+    }, [props.pageName]);
 
     switch(props.pageName) {
         case 'home':
