@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./ui/globals.css";
+import "@/app/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Tyler Davies",
-  description: "Dev portfolio of Tyler Davies",
+  description: "Dev Portfolio of Tyler Davies",
 };
 
 export default function RootLayout({
