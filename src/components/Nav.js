@@ -4,7 +4,12 @@ function NavButton(props) {
     const [mouseHover, setMouseHover] = useState(false);
     return (
         <button
+            href={props.link}
             onClick={() => {
+                if (props.link) {
+                    window.open(props.link, '_blank');
+                    return;
+                }
                 props.changePage(props.pageName);
                 props.setMenuToggle(false);
             }}
@@ -32,7 +37,7 @@ export default function Nav(props) {
     }
 
     return (
-        <div className="flex flex-col top-0 left-0 md:items-center w-screen bg-slate-800 md:bg-slate-200 md:bg-opacity-10 md:backdrop-blur-md md:max-w-64 md:rounded-2xl">
+        <div className="flex flex-col top-0 left-0 md:items-center w-screen bg-slate-800 md:bg-slate-200 md:bg-opacity-15 md:backdrop-blur-lg md:max-w-64 md:rounded-2xl">
             <button
                 className="w-16 h-16 md:hidden bg-slate-400 z-50"
                 onClick={menuButtonClick}
@@ -88,6 +93,15 @@ export default function Nav(props) {
                     changePage={props.changePage}
                 >
                     Contact
+                </NavButton>
+
+                <NavButton
+                    setMenuToggle={setMenuToggle}
+                    currentPage={props.pageName}
+                    pageName='resume'
+                    link='/Résumé.pdf'
+                >
+                    Résumé
                 </NavButton>
             </div>
             <div
