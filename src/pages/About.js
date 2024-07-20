@@ -40,7 +40,7 @@ export default function About() {
                     <h2 className="text-center text-sky-300">Experience</h2>
                     <hr className="my-4" />
                     <h4 className="text-center">Software Developer | Datacenter Technician II</h4>
-                    <p className="text-gray-400 font-light text-center mb-4">Apple Inc. | Jan 2020 - Current</p>
+                    <p className="text-gray-400 font-light text-center mb-4">Apple Inc. | Jan 2024 - Current</p>
                     <ul>
                         <li>Developing internal software to automate configuration tasks, improving efficiency and consistency</li>
                         <li>Writing front-end code in ReactJS for internal web tools, including data manipulation from records stored on back-end servers</li>
