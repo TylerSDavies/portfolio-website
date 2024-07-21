@@ -20,7 +20,7 @@ export default function App() {
           changePage={changePage}
         />
       </div>
-        <div className='flex overflow-auto md:max-w-screen-md lg:mx-w-screen-md xl:max-w-screen-lg max-h-full justify-center w-full min-h-full md:min-h-0'>
+        <div className='flex overflow-auto md:max-w-screen-md lg:mx-w-screen-md xl:max-w-screen-lg max-h-full justify-center w-full min-h-full md:min-h-0 mr-0 md:mr-2'>
           <Pages pageName={pageName} />
       </div>
     </div>
