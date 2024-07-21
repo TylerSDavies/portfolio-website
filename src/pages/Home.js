@@ -18,7 +18,7 @@ export default function Home() {
 
                     <p className="font-extralight">Thank you for visiting my portfolio! Feel free to browse my projects and reach out for collaboration or more information about my work.</p>
                 </div>
-                <div className="flex flex-col justify-center flex-auto xl:max-w-60 gap-8 pb-32 md:pb-0">
+                <div className="flex flex-col md:flex-row xl:flex-col justify-center flex-auto xl:max-w-60 gap-8 pb-32 md:pb-0">
                     <Image
                         src='/images/profile-image.jpg'
                         height={240}
@@ -27,7 +27,7 @@ export default function Home() {
                         style={{display: 'flex', width: '240px', height: '240px'}}
                         className="rounded-xl"
                     />
-                    <div className="flex justify-evenly items-center w-full">
+                    <div className="flex flex-row md:flex-col xl:flex-row justify-evenly items-center w-full">
                         <a href='https://www.linkedin.com/in/tyler-s-davies/' target='_blank'>
                             <Image
                                 src='/logos/linkedin.png'

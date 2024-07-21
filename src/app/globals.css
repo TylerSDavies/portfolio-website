@@ -14,9 +14,6 @@ html {
 body {
   height: 100vh;
   width: 100vw;
-  background-image: url('../../public/images/background-1.jpg');
-  background-position: center;
-  background-size: cover;
 }
 
 h1 {
@@ -53,4 +50,13 @@ li {
 /* The entire scrollbar */
 ::-webkit-scrollbar {
   visibility: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    background-image: url('../../public/images/background-1.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  
 }
