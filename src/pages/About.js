@@ -6,7 +6,7 @@ export default function About() {
         <PageContainer>
             <div className="flex flex-col xl:flex-row md:gap-16">
                 <div style={{flex: 1}}>
-                    <h2 className="text-center text-sky-300">Education</h2>
+                    <h2 className="text-center text-sky-400">Education</h2>
                     <hr className="my-4" />
                     <h4 className="text-center">Bachelor's of Science in Information Technology</h4>
                     <p className="text-gray-400 font-light text-center mb-4">University of Phoenix | 2023</p>
@@ -37,7 +37,7 @@ export default function About() {
                     <hr className="my-4 block xl:hidden" />
                 </div>
                 <div style={{flex: 1}}>
-                    <h2 className="text-center text-sky-300">Experience</h2>
+                    <h2 className="text-center text-sky-400">Experience</h2>
                     <hr className="my-4" />
                     <h4 className="text-center">Software Developer | Datacenter Technician II</h4>
                     <p className="text-gray-400 font-light text-center mb-4">Apple Inc. | Jan 2024 - Current</p>

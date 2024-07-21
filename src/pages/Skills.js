@@ -4,7 +4,7 @@ function Skill(props) {
     return (
         <div
             className='px-4 py-2'
-            style={{backgroundColor: '#c08'}}
+            style={{backgroundColor: '#c078',}}
         >
             {props.children}
         </div>
@@ -14,7 +14,7 @@ function Skill(props) {
 export default function Skills() {
     return (
         <PageContainer>
-            <h2>Front End</h2>
+            <h2 className='mb-2'>Front End</h2>
             <div className='flex gap-2 flex-wrap'>
                 <Skill>HTML</Skill>
                 <Skill>JavaScript</Skill>
@@ -28,7 +28,7 @@ export default function Skills() {
                 <Skill>NextJS</Skill>
                 <Skill>AWS Amplify</Skill>
             </div>
-            <h2 className='mt-8'>Back End</h2>
+            <h2 className='mt-8 mb-2'>Back End</h2>
             <div className='flex gap-2 flex-wrap'>
                 <Skill>NodeJS</Skill>
                 <Skill>Java</Skill>
@@ -37,7 +37,7 @@ export default function Skills() {
                 <Skill>SQL</Skill>
                 <Skill>REST APIs</Skill>
             </div>
-            <h2 className='mt-8'>Miscellaneous</h2>
+            <h2 className='mt-8 mb-2'>Miscellaneous</h2>
             <div className='flex gap-2 flex-wrap'>
                 <Skill>Agile</Skill>
                 <Skill>GitHub</Skill>
