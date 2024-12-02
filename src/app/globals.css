@@ -185,6 +185,10 @@ ul {
   #content {
     padding: 100px 0;
   }
+
+  .subsection {
+    flex: 1 1 400px;
+  }
   
   .subsection:hover {
     background-color: #141e2c;
