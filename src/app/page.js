@@ -217,7 +217,7 @@ export default function App() {
             <div id="uop" className="subsection">
               <h4>Bachelor of Science in information Technology</h4>
               <h5>University of Phoenix | Nov 2023</h5>
-              <ul>
+              <ul style={{width: "100%"}}>
                 <li>Open Systems Interconnection (OSI) Model</li>
                 <li>System Virtualization</li>
                 <li>Agile Methodologies (Scrum, Kanban)</li>
@@ -228,7 +228,7 @@ export default function App() {
             <div id="comptia" className="subsection">
               <h4>CompTIA A+ Certificate</h4>
               <h5>CompTIA | Oct 2024</h5>
-              <ul>
+              <ul style={{width: "100%"}}>
                 <li>Hardware Management</li>
                 <li>Network Support</li>
                 <li>Operating Systems</li>
@@ -241,7 +241,7 @@ export default function App() {
             <div id="rcc" className="subsection">
               <h4>Digital Media and Printing Certificate</h4>
               <h5>Riverside City College | May 2020</h5>
-              <ul>
+              <ul style={{width: "100%"}}>
                 <li>Adobe Photoshop, Illustrator, InDesign, Premier</li>
                 <li>Graphic Design</li>
                 <li>Color and Composition Theory</li>
@@ -253,7 +253,7 @@ export default function App() {
             <div id="codecademy" className="subsection">
               <h4>Full Stack Engineer Certificate</h4>
               <h5>Codecademy | In Progress</h5>
-              <ul>
+              <ul style={{width: "100%"}}>
                 <li>HTML, CSS, JavaScript</li>
                 <li>React, Redux</li>
                 <li>Node.js, Express</li>
