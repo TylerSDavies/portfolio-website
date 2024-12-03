@@ -96,7 +96,7 @@ export default function App() {
           <div id="about" className="section">
             <h3>About</h3>
             <div className="subsection">
-              <p>I&quot;m Tyler, a developer in Phoenix, AZ. Most recently having worked at Apple as a software developer and front-end web developer, I specialized in tools like React to build dynamic and responsive web applications. With over 10 years of professional and educational experience in the tech industry, I have a strong foundation in HTML, CSS, JavaScript, and modern JavaScript frameworks.</p>
+              <p>I&apos;m Tyler, a developer in Phoenix, AZ. Most recently having worked at Apple as a software developer and front-end web developer, I specialized in tools like React to build dynamic and responsive web applications. With over 10 years of professional and educational experience in the tech industry, I have a strong foundation in HTML, CSS, JavaScript, and modern JavaScript frameworks.</p>
               <p>Outside of work, I am continuously working toward further strengthening my abilities and knowledge in both programming and IT. I enjoy digital art, music production and instruments, and trying to stay physically active with running, biking, and going to the gym.</p>
               <p>Thank you for visiting my website! Feel free to browse my projects and reach out for more information about my work.</p>
             </div>
