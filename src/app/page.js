@@ -246,7 +246,7 @@ export default function App() {
                 <li>Graphic Design</li>
                 <li>Color and Composition Theory</li>
                 <li>Typography</li>
-                <li>Print Productionand Prepress</li>
+                <li>Print Production and Prepress</li>
                 <li>Printer Components and Troubleshooting</li>
               </ul>
             </div>
