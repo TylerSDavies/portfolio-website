@@ -103,6 +103,28 @@ export default function App() {
           </div>
           <div id="experience" className="section">
             <h3>Experience</h3>
+            <div id="microsoft" className="subsection">
+              <h4>Datacenter Technician</h4>
+              <h5>Microsoft | Dec 2024 - Current</h5>
+              <p>Racking, stacking, cabling, dressing, and transporting server cabinets/rack, offering white-glove service per Microsoft standards.</p>
+              <div className="skills-frame">
+                <div className="label">
+                  <p>Rack/Stack</p>
+                </div>
+                <div className="label">
+                  <p>Server Hardware</p>
+                </div>
+                <div className="label">
+                  <p>Fiber</p>
+                </div>
+                <div className="label">
+                  <p>Data Center Operations</p>
+                </div>
+                <div className="label">
+                  <p>Cable Dressing</p>
+                </div>
+              </div>
+            </div>
             <div id="apple" className="subsection">
               <h4>Integration Technician II</h4>
               <h5>Apple | Jan 2024 - Nov 2024</h5>
