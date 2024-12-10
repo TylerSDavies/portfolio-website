@@ -1,5 +1,5 @@
-My name is Tyler Davies and I'm an aspiring front end developer, maybe eventually full stack developer. 
+# Portfolio Website
 
-I appreciate you taking a look at my site and other content!
+Written in the NextJS Framework with React, HTML, CSS, Tailwind, and JavaScript
 
-Thank you!
+Viewable at https://tylerdavies.org
