@@ -102,7 +102,7 @@ export default function App() {
             </InfoCard>
           </InfoCardContainer>
           <InfoCardContainer>
-          <h3>Experience</h3>
+            <h3>Experience</h3>
             <InfoCard title={"Integration Technician II"} subtitle={"Apple | Jan 2024 - Nov 2024"}>
               <p>Developed internal React and FastAPI-based application to automate device configuration and error checking, racked and cabled server cabinet hardware, created technical documentation, trained and managed teams on multiple projects, performed device break-fix and configuration, and assisted in maintenance and troubleshooting on x-ray equipment</p>
               <div className="skills-frame">
