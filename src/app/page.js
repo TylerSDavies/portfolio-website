@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image';
-import { inherits } from 'util';
+import { InfoCard, InfoCardContainer } from '../components/InfoCard';
 
 export default function App() {
   return (
@@ -93,41 +93,17 @@ export default function App() {
           </div>
         </div>
         <div id="content">
-          <div id="about" className="section">
+          <InfoCardContainer>
             <h3>About</h3>
-            <div className="subsection">
+            <InfoCard>
               <p>I&apos;m Tyler, a developer in Phoenix, AZ. Most recently having worked at Apple as a software developer and front-end web developer, I specialized in tools like React to build dynamic and responsive web applications. With over 10 years of professional and educational experience in the tech industry, I have a strong foundation in HTML, CSS, JavaScript, and modern JavaScript frameworks.</p>
               <p>Outside of work, I am continuously working toward further strengthening my abilities and knowledge in both programming and IT. I enjoy digital art, music production and instruments, and trying to stay physically active with running, biking, and going to the gym.</p>
               <p>Thank you for visiting my website! Feel free to browse my projects and reach out for more information about my work.</p>
-            </div>
-          </div>
-          <div id="experience" className="section">
-            <h3>Experience</h3>
-            <div id="microsoft" className="subsection">
-              <h4>Datacenter Technician</h4>
-              <h5>Microsoft | Dec 2024 - Current</h5>
-              <p>Racking, stacking, cabling, dressing, and transporting server cabinets/rack, offering white-glove service per Microsoft standards.</p>
-              <div className="skills-frame">
-                <div className="label">
-                  <p>Rack/Stack</p>
-                </div>
-                <div className="label">
-                  <p>Server Hardware</p>
-                </div>
-                <div className="label">
-                  <p>Fiber</p>
-                </div>
-                <div className="label">
-                  <p>Data Center Operations</p>
-                </div>
-                <div className="label">
-                  <p>Cable Dressing</p>
-                </div>
-              </div>
-            </div>
-            <div id="apple" className="subsection">
-              <h4>Integration Technician II</h4>
-              <h5>Apple | Jan 2024 - Nov 2024</h5>
+            </InfoCard>
+          </InfoCardContainer>
+          <InfoCardContainer>
+          <h3>Experience</h3>
+            <InfoCard title={"Integration Technician II"} subtitle={"Apple | Jan 2024 - Nov 2024"}>
               <p>Developed internal React and FastAPI-based application to automate device configuration and error checking, racked and cabled server cabinet hardware, created technical documentation, trained and managed teams on multiple projects, performed device break-fix and configuration, and assisted in maintenance and troubleshooting on x-ray equipment</p>
               <div className="skills-frame">
                 <div className="label">
@@ -155,10 +131,8 @@ export default function App() {
                   <p>Network Configuration</p>
                 </div>
               </div>
-            </div>
-            <div id="fantastic-displays" className="subsection">
-              <h4>IT / Help Desk</h4>
-              <h5>Fantastic Displays | Jun 2019 - Apr 2020</h5>
+            </InfoCard>
+            <InfoCard title={"IT / Help Desk"} subtitle={"Fantastic Displays | Jun 2019 - Apr 2020"}>
               <p>Fixed computer and network issues, replaced peripherals, recorded inventory, laid network cables and switches throughout office spaces, handled shipping/receiving, and other miscellaneous tasks</p>
               <div className="skills-frame">
                 <div className="label">
@@ -177,68 +151,60 @@ export default function App() {
                   <p>Customer Service</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <div id="Projects" className="section">
+            </InfoCard>
+          </InfoCardContainer>
+          <InfoCardContainer>
             <h3>Projects</h3>
-            <div id="device-config-automation" className="subsection">
-              <h4>Device Configuration Automation Utility</h4>
-              <h5>React, FastAPI, and WebPack Browser-Based Utility</h5>
+            <InfoCard title={"Device Configuration Automation Utility"} subtitle={"React, FastAPI, and WebPack Browser-Based Utility"}>
               <p>I led development on an internal-use tool at Apple to streamline configuration and QA of devices such as thermal printers.</p>
               <p>Built with a combination of React, FastAPI, and WebPack, the utility ran as a web application that could interact with the local network. It got around browser security restrictions by also running a full FastAPI-based back end on the local machine. The web application would send HTTP requests to the back end. The back end would use its wider range of permissions to perform actions on the local machine and network, and would interact back and forth between aforementioned devices and the web app client.</p>
               <p>The front end was developed with the React JavaScript framework, the back end with the FastAPI Python framework, and it was all condensed into a single easily-distributable executable through the use of WebPack and PyInstaller.</p>
-              <div style={{display: "flex", gap: "5px", alignItems: "center", justifyContent: "center", padding: "20px 0"}}>
+              <div style={{display: "flex", gap: "5px", alignItems: "center", justifyContent: "center", padding: "10px 0"}}>
                 <div style={{display: "flex", flexDirection: "column", gap: "5px"}}>
-                  <div style={{border: "1px solid #9499ad", padding: "5px 10px"}}>
-                    <h4>Front End</h4>
-                    <p>React<br/>JavaScript<br/>HTML<br/>CSS</p>
+                  <div style={{border: "1px solid #9499ad", padding: "2px 8px"}}>
+                    <h4 style={{fontSize: "0.8rem"}}>Front End</h4>
+                    <p style={{fontSize: "0.8rem"}}>React<br/>JavaScript<br/>HTML<br/>CSS</p>
                   </div>
-                  <div style={{border: "1px solid #9499ad", padding: "5px 10px"}}>
-                    <h4>Back End</h4>
-                    <p>FastAPI<br/>Python<br/></p>
+                  <div style={{border: "1px solid #9499ad", padding: "2px 8px"}}>
+                    <h4 style={{fontSize: "0.8rem"}}>Back End</h4>
+                    <p style={{fontSize: "0.8rem"}}>FastAPI<br/>Python<br/></p>
                   </div>
                 </div>
-                <h4 style={{textAlign: "center", width: "fit-content", padding: "2px"}}>→</h4>
+                <h4 style={{textAlign: "center", width: "fit-content"}}>→</h4>
                 <div style={{display: "flex", flexDirection: "column"}}>
-                  <div style={{border: "1px solid #9499ad", padding: "5px 10px"}}>
-                    <h4>WebPack</h4>
-                    <p>Front End<br/>Back End</p>
+                  <div style={{border: "1px solid #9499ad", padding: "2px 8px"}}>
+                    <h4 style={{fontSize: "0.8rem"}}>WebPack</h4>
+                    <p style={{fontSize: "0.8rem"}}>Front End<br/>Back End</p>
                   </div>
                 </div>
-                <h4 style={{textAlign: "center", width: "fit-content", padding: "2px"}}>→</h4>
-                <div style={{display: "flex", flexDirection: "column", gap: "10px"}}>
-                  <div style={{border: "1px solid #9499ad", padding: "5px 10px"}}>
-                    <h4>Distributable</h4>
+                <h4 style={{textAlign: "center", width: "fit-content"}}>→</h4>
+                <div style={{display: "flex", flexDirection: "column", gap: "8px"}}>
+                  <div style={{border: "1px solid #9499ad", padding: "2px 8px"}}>
+                    <h4 style={{fontSize: "0.8rem"}}>Distributable</h4>
                   </div>
                 </div>
               </div>
               <p>With the use of GitHub, there was total control over versioning and builds of the program could be distributed with ease.</p>
-            </div>
-            <div id="portfolio-website" className="subsection">
-              <h4>Portfolio Website</h4>
-              <h5>NextJS-Based Web Application</h5>
+            </InfoCard>
+            <InfoCard title={"Portfolio Website"} subtitle={"NextJS-Based Web Application"}>
               <p>This website was made using the NextJS framework and utilizes a number of tools such as React and Tailwind.</p>
               <Image src="/images/portfolio-01.jpg" alt="VSCode Screenshot" width={600} height={600} style={{padding: "10px 0"}}/>
               <p>Many elements on the page are React components, such as the navigation bar, the navigation buttons themselves, labels in the skills section, and more.</p>
               <Image src="/images/portfolio-02.jpg" alt="Figma Screenshot" width={600} height={600} style={{padding: "10px 0"}}/>
               <p>GitHub is my go-to repository host. I have worked across numberous different devices while building this site. Furthermore, the page you are currently viewing is hosted on AWS. Every time a change is pushed to the &quot;main&quot; repository, the live site updates seamlessly on AWS.</p>
-            </div>
-            <div id="fux" className="subsection">
-              <h4>fuX</h4>
-              <h5>Chrome Extension</h5>
+            </InfoCard>
+            <InfoCard title={"fuX"} subtitle={"Chrome Extension"}>
               <p>fuX is a Chrome extension I made to improve sharing posts from Twitter/X. It utilizes another service called FixUpX, a service that makes Twitter/X posts embed properly in chat services such as Telegram, Discord, Slack, and more.</p>
               <div style={{padding: "10px 0", display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "space-apart"}}>
                 <Image src="/images/fuX-01.jpg" alt="fuX-01" width={600} height={600} style={{minWidth: "200px", flex: 1}}/>
                 <Image src="/images/fuX-02.jpg" alt="fuX-02" width={600} height={600} style={{minWidth: "200px", flex: 1}}/>
               </div>
               <p>The FixUpX button rests beneath every individual post. Clicking it copies the formatted link to your clipboard to make posting elsewhere fast and easy.</p>
-            </div>
-          </div>
-          <div id="Education" className="section">
+            </InfoCard>
+          </InfoCardContainer>
+          <InfoCardContainer>
             <h3>Education</h3>
-            <div id="uop" className="subsection">
-              <h4>Bachelor of Science in information Technology</h4>
-              <h5>University of Phoenix | Nov 2023</h5>
+            <InfoCard title={"Bachelor of Science in Information Technology"} subtitle={"University of Phoenix | Nov 2023"}>
               <ul style={{width: "100%"}}>
                 <li>Open Systems Interconnection (OSI) Model</li>
                 <li>System Virtualization</li>
@@ -246,10 +212,8 @@ export default function App() {
                 <li>Project Management</li>
                 <li>Product Lifecycle</li>
               </ul>
-            </div>
-            <div id="comptia" className="subsection">
-              <h4>CompTIA A+ Certificate</h4>
-              <h5>CompTIA | Oct 2024</h5>
+            </InfoCard>
+            <InfoCard title={"CompTIA A+ Certificate"} subtitle={"CompTIA | Oct 2024"}>
               <ul style={{width: "100%"}}>
                 <li>Hardware Management</li>
                 <li>Network Support</li>
@@ -259,10 +223,8 @@ export default function App() {
                 <li>Virtualization and Cloud Computing</li>
                 <li>Cybersecurity Best Practices</li>
               </ul>
-            </div>
-            <div id="rcc" className="subsection">
-              <h4>Digital Media and Printing Certificate</h4>
-              <h5>Riverside City College | May 2020</h5>
+            </InfoCard>
+            <InfoCard title={"Digital Media and Printing Certificate"} subtitle={"Riverside City College | May 2020"}>
               <ul style={{width: "100%"}}>
                 <li>Adobe Photoshop, Illustrator, InDesign, Premier</li>
                 <li>Graphic Design</li>
@@ -271,10 +233,8 @@ export default function App() {
                 <li>Print Production and Prepress</li>
                 <li>Printer Components and Troubleshooting</li>
               </ul>
-            </div>
-            <div id="codecademy" className="subsection">
-              <h4>Full Stack Engineer Certificate</h4>
-              <h5>Codecademy | In Progress</h5>
+            </InfoCard>
+            <InfoCard title={"Full Stack Engineer Certificate"} subtitle={"Codecademy | In Progress"}>
               <ul style={{width: "100%"}}>
                 <li>HTML, CSS, JavaScript</li>
                 <li>React, Redux</li>
@@ -284,8 +244,8 @@ export default function App() {
                 <li>Authentication and Authorization</li>
                 <li>Testing and Deployment</li>
               </ul>
-            </div>
-          </div>
+            </InfoCard>
+          </InfoCardContainer>
         </div>
       </div>
     </div>

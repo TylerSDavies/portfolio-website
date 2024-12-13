@@ -1,0 +1,43 @@
+.info-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    gap: 10px;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+    padding: 20px;
+    background-color: #101a26;
+    flex: 1 1 300px;
+    align-items: center;
+    overflow: hidden;
+}
+
+@media (min-width: 500px) {
+    .info-card {
+        border-radius: 20px;
+    }
+}
+
+@media (min-width: 500px) {
+        #container {
+            padding: 0 30px;
+        }
+    }
+  
+@media (min-width: 800px) {
+    .info-card {
+        flex: 1 1 400px;
+    }
+    
+    .info-card:hover {
+        background-color: #141e2c;
+        box-shadow: 0 0 10px #0004;
+        transform: scale(1.01);
+        z-index: 100;
+    }
+}
